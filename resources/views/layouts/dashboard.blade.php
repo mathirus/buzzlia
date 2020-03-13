@@ -15,7 +15,7 @@
 
     </header>
     
-    
+    @include('layouts.body')
 
     @yield('content')
 

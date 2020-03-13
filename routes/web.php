@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','layouts/dashboard')->name('home');
+
+Route::post('/','MailController@store')->name('home');
+
 
 Route::get('contacto', function () {
     return view('contacto');
 })->name('contacto');
+
+
